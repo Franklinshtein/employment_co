@@ -17,8 +17,8 @@
             <nav class="header-nav">
                 <ul>
                     <li><a href="index.html" class="active">Strona główna</a></li>
-                    <li><a href="about.html" >O nas</a></li>
                     <li><a href="services.html">Oferta</a></li>
+                    <li><a href="about.html" >O nas</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
@@ -38,24 +38,24 @@
 <section class="services">
     <div class="service-item">
         <i class="fas fa-users"></i>
-        <h3>Rekrutacja jednorazowa</h3>
+        <a href="services.html#jednorazowa"><h3>Rekrutacja jednorazowa</h3></a>
     </div>
     <div class="service-item">
         <i class="fas fa-briefcase"></i>
-        <h3>Praca tymczasowa</h3>
+        <a href="services.html#tymczasowa"><h3>Praca tymczasowa</h3></a>
     </div>
     <div class="service-item">
         <i class="fas fa-cogs"></i>
-        <h3>Outsourcing</h3>
+        <a href="services.html#outsourcing"><h3>Outsourcing</h3></a>
     </div>
     <!-- Removed Szkolenia, doradztwo -->
     <div class="service-item">
         <i class="fas fa-gavel"></i>
-        <h3>Obsługa prawna / Legalizacja pobytu</h3>
+        <a href="services.html#legalizacja"><h3>Obsługa prawna / Legalizacja pobytu</h3></a>
     </div>
     <div class="service-item">
         <i class="fas fa-ellipsis-h"></i>
-        <h3>Inne</h3>
+        <a href="services.html#inne"><h3>Inne</h3></a>
     </div>
 </section>
 
@@ -122,32 +122,42 @@
     
     
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <!-- Contact Section -->
-            <div class="footer-block footer-contact">
-                <h3>Kontakt</h3>
-                <p>Tel: +48 123 456 789</p>
-                <p>Email: kontakt@firma.pl</p>
-                <p>Adres: Ul. Przykładowa 1, Kraków</p>
-            </div>
-    
-            <!-- Leasing Section -->
-            <div class="footer-block footer-services">
-                <h3>Nasze usługi</h3>
-                <p>Leasing pracowników</p>
-                <p>Outsourcing procesów i funkcji</p>
-                <p>Transgraniczne delegowanie pracowników</p>
-                <p>Legalizacja zatrudnienia cudzoziemców</p>
-            </div>
-    
-            <!-- Social Media Section -->
-            <div class="footer-block footer-social">
-                <h3>Nasze media społecznościowe</h3>
-                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-block footer-contact">
+            <h3>Kontakt</h3>
+            <p>Tel: +48 123 456 789</p>
+            <p>Email: kontakt@firma.pl</p>
+            <p>Adres: Ul. Przykładowa 1, Kraków</p>
+        </div>
+
+        <!-- Leasing Section -->
+        <div class="footer-block footer-services">
+            <h3>Nasze usługi</h3>
+            <a href="services.html#outsourcing"><p>Outsourcing procesów i funkcji</p></a>
+            <a href="services.html#transgraniczne"><p>Transgraniczne delegowanie pracowników</p></a>
+            <a href="services.html#legalizacja"><p>Legalizacja zatrudnienia cudzoziemców</p></a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-block footer-social">
+            <h3>Nasze media społecznościowe</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="./pictures/icon/icons8-facebook-64.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="./pictures/icon/icons8-instagram-50.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./pictures/icon/icons8-linkedin-50.png" alt="LinkedIn">
+                </a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>

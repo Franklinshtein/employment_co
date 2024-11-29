@@ -3,55 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-
 </head>
 <body>
-        <!-- Sticky Header -->
-        <header class="sticky-header">
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="index.html" >Strona główna</a></li>
-                    <li><a href="about.html" >O nas</a></li>
-                    <li><a href="services.html">Oferta</a></li>
-                    <li><a href="contact.html" class="active">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="services.html">Oferta</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main class="contact_main">
 
+        <section class="contact-header">
+            <div class="overlay">
+                <h1>Kontakt</h1>
+            </div>
+        </section>
+        
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <!-- Contact Section -->
-            <div class="footer-block footer-contact">
+        <section class="contact-info-columns">
+            <div class="column">
+                <h3>Nasza lokalizacja</h3>
+                <p>ul. Przykładowa 1,<br>31-000 Kraków</p>
+            </div>
+            <div class="column">
                 <h3>Kontakt</h3>
-                <p>Tel: +48 123 456 789</p>
-                <p>Email: kontakt@firma.pl</p>
-                <p>Adres: Ul. Przykładowa 1, Kraków</p>
+                <p>Email: biuro@biuro.pl</p>
+                <p>Tel: +48 000 110 312</p>
             </div>
-    
-            <!-- Leasing Section -->
-            <div class="footer-block footer-services">
-                <h3>Nasze usługi</h3>
-                <p>Leasing pracowników</p>
-                <p>Outsourcing procesów i funkcji</p>
-                <p>Transgraniczne delegowanie pracowników</p>
-                <p>Legalizacja zatrudnienia cudzoziemców</p>
+            <div class="column">
+                <h3>Godziny Otwarcia</h3>
+                <p>Poniedziałek – Piątek: 09:00 – 17:00</p>
+                <p>Sobota: 09:00 – 14:00</p>
             </div>
-    
-            <!-- Social Media Section -->
-            <div class="footer-block footer-social">
-                <h3>Nasze media społecznościowe</h3>
-                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="form-section">
+            <div class="form-container">
+                <h1>wyślij swoje pytanie</h1>
+                <p>Masz pytania? Zostaw nam wiadomość:</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">Imię</label>
+                            <input type="text" id="first-name" placeholder="Imię">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Nazwisko</label>
+                            <input type="text" id="last-name" placeholder="Nazwisko">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" placeholder="Telefon">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Dodatkowe informacje</label>
+                        <textarea id="message" rows="4" placeholder="Dodatkowe informacje"></textarea>
+                    </div>
+                    <button type="submit">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-block footer-contact">
+            <h3>Kontakt</h3>
+            <p>Tel: +48 123 456 789</p>
+            <p>Email: kontakt@firma.pl</p>
+            <p>Adres: Ul. Przykładowa 1, Kraków</p>
+        </div>
+
+        <!-- Leasing Section -->
+        <div class="footer-block footer-services">
+            <h3>Nasze usługi</h3>
+            <p>Outsourcing procesów i funkcji</p>
+            <p>Transgraniczne delegowanie pracowników</p>
+            <p>Legalizacja zatrudnienia cudzoziemców</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-block footer-social">
+            <h3>Nasze media społecznościowe</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="./pictures/icon/icons8-facebook-64.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="./pictures/icon/icons8-instagram-50.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./pictures/icon/icons8-linkedin-50.png" alt="LinkedIn">
+                </a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
