@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sticky Header -->
-    <header class="sticky-header">
-        <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="services.html">Oferta</a></li>
-                <li><a href="about.html">O nas</a></li>
-                <li><a href="contact.html" class="active">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <!-- Sticky Header -->
+        <header class="sticky-header">
+ 
+            <!-- Navigation -->
+            <nav class="header-nav" id="menu">
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="services.html">Oferta</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger Button for Mobile -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
 
     <!-- Main Content -->
     <main class="contact_main">
@@ -97,9 +105,9 @@
         <!-- Leasing Section -->
         <div class="footer-block footer-services">
             <h3>Nasze usługi</h3>
-            <p>Outsourcing procesów i funkcji</p>
-            <p>Transgraniczne delegowanie pracowników</p>
-            <p>Legalizacja zatrudnienia cudzoziemców</p>
+            <a href="services.html#outsourcing"><p>Outsourcing procesów i funkcji</p></a>
+            <a href="services.html#transgraniczne"><p>Transgraniczne delegowanie pracowników</p></a>
+            <a href="services.html#legalizacja"><p>Legalizacja zatrudnienia cudzoziemców</p></a>
         </div>
 
         <!-- Social Media Section -->
@@ -120,5 +128,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
+
