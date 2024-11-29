@@ -137,7 +137,13 @@ header {
     flex-wrap: nowrap; /* Keep the items in a single row */
     z-index: 10; /* Make sure the services section is above the hero content */
 }
-
+@media (max-width: 768px) {
+    .services {
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
+}
 /* Service Item */
 .service-item {
     width: 218px; /* Set width to 218px */
@@ -1131,13 +1137,58 @@ margin-top: -80px;
     }
 }
 
-    @media (min-width: 1024px) {
-        .menu-toggle  {
-            display: none;
-        }
+/* General styles for the burger */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
 
-    @media (max-width: 1023px) {
-            .hide-on-mobile {
-                display: block; /* Visible only on smaller screens */
-            }
-        }
+.burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Make the burger menu visible on small screens */
+    .burger {
+        display: flex;
+    }
+
+    /* Hide the menu by default on mobile */
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-nav ul li {
+        margin: 10px 0;
+    }
+
+    /* When .show class is added, display the menu */
+    .header-nav.show {
+        display: block;
+    }
+
+    .header-nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
